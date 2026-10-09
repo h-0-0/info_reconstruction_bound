@@ -1,4 +1,4 @@
-# From Pixels to Privacy-Sensitive Features: reconstruction bounds for DP-SGD
+# From Pixels to Privacy-Sensitive Features: Information-Theoretic reconstruction bounds for DP-SGD
 
 Code for *From Pixels to Privacy-Sensitive Features: An Information-Theoretic Framework for Reconstruction Bounds*.
 
