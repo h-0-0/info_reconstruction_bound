@@ -1,0 +1,22 @@
+\begin{table}[t]
+  \centering
+  \caption{CIFAR10 (pixel MSE): protection $\rho$ (bound) and achieved utility (wrn16_4_gn) versus the DP guarantee $\varepsilon$ (at $\delta=n^{-1.1}$).}
+  \label{tab:util_cifar10_mse}
+  \begin{tabular}{r r r}
+    \toprule
+    $\varepsilon$ & $\rho$ (bound) & utility (test acc) \\
+    \midrule
+    0.10 & 0.90 & 0.109\,$\pm$\,0.009 \\
+    0.25 & 0.90 & 0.108\,$\pm$\,0.006 \\
+    0.50 & 0.89 & 0.139\,$\pm$\,0.014 \\
+    1.00 & 0.89 & 0.243\,$\pm$\,0.033 \\
+    2.00 & 0.87 & 0.425\,$\pm$\,0.009 \\
+    4.00 & 0.81 & 0.579\,$\pm$\,0.007 \\
+    8.00 & 0.71 & 0.655\,$\pm$\,0.006 \\
+    16.00 & 0.52 & 0.701\,$\pm$\,0.003 \\
+    32.00 & 0.13 & 0.742\,$\pm$\,0.006 \\
+    63.99 & 0.00 & 0.768\,$\pm$\,0.007 \\
+    128.00 & 0.00 & 0.794\,$\pm$\,0.003 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,6 @@
+{
+  "dataset": "celeba",
+  "n_targets": 100,
+  "realizable_prior_sqrt_lpips": 0.3971298635005951,
+  "feature_centroid_sqrt_lpips": 0.3761278986930847
+}

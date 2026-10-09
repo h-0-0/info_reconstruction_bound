@@ -1,0 +1,12 @@
+\begin{tabular}{l r r r r r r}
+\toprule
+& \multicolumn{3}{c}{pixel ($\Psi=\mathrm{id}$)} & \multicolumn{3}{c}{perceptual ($\Psi=\lpipsmap$)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Dataset & $\tr\Sigma$ & UCB margin & $\rmseprior/\sqrt d$ & $\tr\Sigma_{\lpipsmap}$ & UCB margin & $\rmseprior/\sqrt m$ \\
+\midrule
+MNIST & $3.43\times10^{6}$ & $2.5\%$ & $66.2$ & $0.1338$ & $5.8\%$ & $2.05\times10^{-3}$ \\
+CIFAR-10 & $1.24\times10^{7}$ & $3.2\%$ & $63.6$ & $0.2463$ & $3.3\%$ & $2.78\times10^{-3}$ \\
+CelebA & $5.91\times10^{7}$ & $0.5\%$ & $69.3$ & $0.1445$ & $0.6\%$ & $2.13\times10^{-3}$ \\
+ImageNette & $2.46\times10^{8}$ & $16.6\%$ & $70.7$ & --- & --- & --- \\
+\bottomrule
+\end{tabular}

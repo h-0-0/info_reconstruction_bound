@@ -1,0 +1,22 @@
+\begin{table}[t]
+  \centering
+  \caption{MNIST (LPIPS): protection $\rho$ (bound) and achieved utility (lenet5) versus the DP guarantee $\varepsilon$ (at $\delta=n^{-1.1}$).}
+  \label{tab:util_mnist_lpips}
+  \begin{tabular}{r r r}
+    \toprule
+    $\varepsilon$ & $\rho$ (bound) & utility (test acc) \\
+    \midrule
+    0.10 & 0.92 & 0.113\,$\pm$\,0.000 \\
+    0.25 & 0.92 & 0.113\,$\pm$\,0.000 \\
+    0.50 & 0.91 & 0.113\,$\pm$\,0.000 \\
+    1.00 & 0.91 & 0.313\,$\pm$\,0.256 \\
+    2.00 & 0.89 & 0.865\,$\pm$\,0.039 \\
+    4.00 & 0.83 & 0.953\,$\pm$\,0.001 \\
+    8.00 & 0.73 & 0.970\,$\pm$\,0.001 \\
+    16.00 & 0.54 & 0.971\,$\pm$\,0.002 \\
+    32.00 & 0.17 & 0.972\,$\pm$\,0.001 \\
+    64.00 & 0.00 & 0.976\,$\pm$\,0.000 \\
+    128.00 & 0.00 & 0.978\,$\pm$\,0.001 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

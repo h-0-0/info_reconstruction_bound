@@ -1,0 +1,30 @@
+{
+  "experiment_id": "dpsgd_nm_cifar10_wrn16_4_gn_nm0.503697_C1.0_s44",
+  "model_name": "wrn16_4_gn",
+  "dataset": "cifar10",
+  "max_grad_norm": 1.0,
+  "noise_multiplier": "0.503697",
+  "best_lr": 1.0,
+  "seed": 44,
+  "epochs": 100,
+  "batch_size": 1024,
+  "train_acc": "0.763554",
+  "val_acc": "0.779400",
+  "test_acc": "0.772400",
+  "test_loss": "0.887504",
+  "eps_8e-06": "69.167911",
+  "gamma_prv_nats": "23.02779106",
+  "gamma_prv_bits": "33.22207997",
+  "total_steps": 4400,
+  "sampling_rate": "0.02272727",
+  "num_params": 2748890,
+  "n_train": 45000,
+  "target_delta": 7.611429600187426e-06,
+  "augmult_k": 4,
+  "momentum": 0.9,
+  "aug_policy": {
+    "pad": 4,
+    "hflip": true
+  },
+  "ema_decay": 0.999
+}

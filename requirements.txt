@@ -1,0 +1,26 @@
+# Exact versions of the environment every reported number and figure was produced (and regression-tested) with.
+# Python 3.12.3. Install into a fresh virtual environment:
+#   python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# The CUDA 12.4 builds of torch/torchvision are on the PyTorch index:
+#   .venv/bin/pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu124
+# GPU results also depend on the GPU model (README, Determinism); CPU-only installs reproduce every figure and table
+# from the shipped results.
+torch==2.6.0
+torchvision==0.21.0
+opacus==1.5.4
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+pyarrow==24.0.0            # parquet engine for the CelebA HuggingFace-mirror loader
+pillow==12.1.1
+lpips==0.1.4
+matplotlib==3.10.8
+# notebooks
+jupyter==1.1.1
+ipykernel==7.2.0
+nbconvert==7.17.0
+nbclient==0.10.4
+nbformat==5.10.4
+# tests
+pytest==9.0.3
+pytest-xdist==3.8.0      # parallel test workers

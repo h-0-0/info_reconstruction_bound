@@ -1,0 +1,6 @@
+{
+  "dataset": "mnist",
+  "n_targets": 100,
+  "realizable_prior_sqrt_lpips": 0.41386082768440247,
+  "feature_centroid_sqrt_lpips": 0.36820244789123535
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "dpsgd_nm_mnist_lenet5_nm0.795774_C1.0_s42",
+  "model_name": "lenet5",
+  "dataset": "mnist",
+  "max_grad_norm": 1.0,
+  "noise_multiplier": "0.795774",
+  "best_lr": 0.5,
+  "seed": 42,
+  "epochs": 100,
+  "batch_size": 1024,
+  "train_acc": "0.969959",
+  "val_acc": "0.968400",
+  "test_acc": "0.969300",
+  "test_loss": "0.282468",
+  "eps_7e-06": "17.316188",
+  "gamma_prv_nats": "3.49490865",
+  "gamma_prv_bits": "5.04208738",
+  "total_steps": 4900,
+  "sampling_rate": "0.02040816",
+  "num_params": 61706
+}

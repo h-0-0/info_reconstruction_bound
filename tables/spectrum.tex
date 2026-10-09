@@ -1,0 +1,21 @@
+\begin{table}[htbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{r ccc ccc ccc cc}
+\toprule
+ & \multicolumn{3}{c}{MNIST} & \multicolumn{3}{c}{CIFAR-10} & \multicolumn{3}{c}{CelebA} & \multicolumn{2}{c}{ImageNette} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-12}
+$\varepsilon$ & acc. & $\rhostarpx$ & $\rhostarlp$ & acc. & $\rhostarpx$ & $\rhostarlp$ & acc. & $\rhostarpx$ & $\rhostarlp$ & acc. & $\rhostarpx$ \\
+\midrule
+$1$ & 0.313 & 0.907 & 0.908 & 0.243 & 0.887 & 0.952 & 0.923 & 0.888 & 0.944 & 0.122 & 0.865 \\
+$2$ & 0.865 & 0.892 & 0.886 & 0.425 & 0.867 & 0.940 & 0.946 & 0.861 & 0.931 & 0.239 & 0.845 \\
+$4$ & 0.953 & 0.845 & 0.831 & 0.579 & 0.815 & 0.901 & 0.954 & 0.805 & 0.892 & 0.440 & 0.795 \\
+$8$ & 0.970 & 0.754 & 0.726 & 0.655 & 0.711 & 0.822 & 0.957 & 0.696 & 0.801 & 0.603 & 0.683 \\
+$16^{\dagger}$ & 0.971 & 0.556 & 0.536 & 0.701 & 0.523 & 0.612 & 0.961 & 0.513 & 0.588 & 0.662 & 0.445 \\
+$32^{\dagger}$ & 0.972 & 0.131 & 0.169 & 0.742 & 0.131 & 0.188 & 0.967 & 0.131 & 0.174 & 0.702 & 0.000 \\
+$64^{\dagger}$ & 0.976 & 0.000 & 0.000 & 0.768 & 0.000 & 0.000 & 0.963 & 0.000 & 0.000 & 0.723 & 0.000 \\
+\midrule
+non-priv. & 0.989 & --- & --- & 0.906 & --- & --- & 0.971 & --- & --- & 0.779 & --- \\
+\bottomrule
+\end{tabular}
+\caption{Values behind \Cref{fig:spectrum_headline,fig:spectrum_all}: test accuracy (mean over 3 seeds) and the pixel and perceptual bounds at each target $\varepsilon$, each a $95\%$ lower bound. $\dagger$: the $\varepsilon>10$ band of \citet{ponomareva2023dp}.}
+\label{tab:spectrum}
+\end{table}

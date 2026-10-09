@@ -1,0 +1,20 @@
+{
+  "experiment_id": "dpsgd_nm_imagenette_resnet18gn_nm0.0_C1000000000.0_s42",
+  "model_name": "resnet18gn",
+  "dataset": "imagenette",
+  "max_grad_norm": 1000000000.0,
+  "noise_multiplier": "0.000000",
+  "best_lr": 0.05,
+  "seed": 42,
+  "epochs": 100,
+  "batch_size": 1024,
+  "train_acc": "0.527374",
+  "val_acc": "0.795500",
+  "test_acc": "0.779221",
+  "test_loss": "0.764308",
+  "gamma_prv_nats": "inf",
+  "gamma_prv_bits": "inf",
+  "total_steps": 1000,
+  "sampling_rate": "0.10000000",
+  "num_params": 11181642
+}

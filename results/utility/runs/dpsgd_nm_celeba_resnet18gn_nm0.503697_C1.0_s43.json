@@ -1,0 +1,21 @@
+{
+  "experiment_id": "dpsgd_nm_celeba_resnet18gn_nm0.503697_C1.0_s43",
+  "model_name": "resnet18gn",
+  "dataset": "celeba",
+  "max_grad_norm": 1.0,
+  "noise_multiplier": "0.503697",
+  "best_lr": 0.25,
+  "seed": 43,
+  "epochs": 100,
+  "batch_size": 1024,
+  "train_acc": "0.971255",
+  "val_acc": "0.963250",
+  "test_acc": "0.964000",
+  "test_loss": "0.242041",
+  "eps_8e-06": "69.167911",
+  "gamma_prv_nats": "23.02779106",
+  "gamma_prv_bits": "33.22207997",
+  "total_steps": 4400,
+  "sampling_rate": "0.02272727",
+  "num_params": 11177538
+}

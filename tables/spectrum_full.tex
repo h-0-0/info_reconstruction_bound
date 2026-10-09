@@ -1,0 +1,41 @@
+\begin{table}[htbp]\centering\small
+\begin{tabular}{l r r r cc cc}
+\toprule
+Dataset & $\varepsilon$ & $\gamma$ (bits) & $\sigma$ & \multicolumn{2}{c}{$k^\star$ (pix / $\lpipsmap$)} & \multicolumn{2}{c}{$\nu^{2\star}$ (pix / $\lpipsmap$)} \\
+\midrule
+MNIST & $1$ & 0.048 & 5.574 & 14 & 16 & 1.6 & 3.2 \\
+ & $2$ & 0.169 & 3.028 & 16 & 32 & 1.6 & 6.4 \\
+ & $4$ & 0.570 & 1.741 & 16 & 32 & 1.6 & 3.2 \\
+ & $8$ & 1.785 & 1.110 & 28 & 32 & 1.6 & 1.6 \\
+ & $16$ & 5.042 & 0.796 & 28 & 32 & 0.8 & 0.8 \\
+ & $32$ & 13.150 & 0.617 & 28 & 32 & 0.4 & 0.4 \\
+ & $64$ & 32.883 & 0.497 & -- & -- & -- & -- \\
+\midrule
+CIFAR-10 & $1$ & 0.049 & 5.838 & 6 & 16 & 0.8 & 1.6 \\
+ & $2$ & 0.171 & 3.167 & 6 & 32 & 0.4 & 3.2 \\
+ & $4$ & 0.577 & 1.815 & 12 & 32 & 0.8 & 3.2 \\
+ & $8$ & 1.806 & 1.147 & 32 & 32 & 1.6 & 1.6 \\
+ & $16$ & 5.108 & 0.816 & 32 & 32 & 0.8 & 0.8 \\
+ & $32$ & 13.317 & 0.629 & 32 & 32 & 0.4 & 0.4 \\
+ & $64$ & 33.222 & 0.504 & -- & -- & -- & -- \\
+\midrule
+CelebA & $1$ & 0.049 & 5.838 & 3 & 16 & 0.2 & 1.6 \\
+ & $2$ & 0.171 & 3.167 & 6 & 32 & 0.4 & 3.2 \\
+ & $4$ & 0.577 & 1.815 & 8 & 32 & 0.4 & 3.2 \\
+ & $8$ & 1.806 & 1.147 & 16 & 32 & 0.8 & 1.6 \\
+ & $16$ & 5.108 & 0.816 & 32 & 32 & 0.8 & 0.8 \\
+ & $32$ & 13.317 & 0.629 & 24 & 32 & 0.2 & 0.4 \\
+ & $64$ & 33.222 & 0.504 & -- & -- & -- & -- \\
+\midrule
+ImageNette & $1$ & 0.060 & 10.969 & 24 & n/a & 3.2 & n/a \\
+ & $2$ & 0.207 & 5.941 & 24 & n/a & 3.2 & n/a \\
+ & $4$ & 0.682 & 3.313 & 32 & n/a & 3.2 & n/a \\
+ & $8$ & 2.111 & 1.948 & 32 & n/a & 1.6 & n/a \\
+ & $16$ & 6.010 & 1.242 & 32 & n/a & 0.8 & n/a \\
+ & $32$ & 15.682 & 0.863 & -- & n/a & -- & n/a \\
+ & $64$ & 38.345 & 0.639 & -- & n/a & -- & n/a \\
+\bottomrule
+\end{tabular}
+\caption{Mechanism internals behind \Cref{fig:spectrum_headline,fig:spectrum_all}: the leakage each configuration incurs, the noise multiplier achieving it, and the binding pair. A dash: the bound is zero at that leakage; n/a: LPIPS is not evaluated on ImageNette. $k^\star$ grows with $\gamma$ overall up to single grid steps on CelebA.}
+\label{tab:spectrum_full}
+\end{table}

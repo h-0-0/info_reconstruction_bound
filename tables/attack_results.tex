@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+    \centering\small
+    \begin{tabular}{l l c c c c }
+        \toprule
+        & $\gamma$ (bits) & $0.72$ & $2.89$ & $8.01$ & $72.13$ \\
+        \midrule
+        MNIST, pixel & $q=1$ & $0.987$ & $0.948$ & $0.848$ & $0.620$ \\
+                      & $(q,T)=(0.02,100)$ & $1.006$ & $0.984$ & $0.921$ & $0.690$ \\
+                      & bound & $0.831$ & $0.673$ & $0.397$ & $0$ \\
+        \midrule
+        MNIST, LPIPS & $q=1$ & $0.999$ & $0.922$ & $0.845$ & $0.636$ \\
+                      & $(q,T)=(0.02,100)$ & $1.001$ & $0.964$ & $0.926$ & $0.681$ \\
+                      & bound & $0.816$ & $0.653$ & $0.396$ & $0$ \\
+        \midrule
+        CelebA, pixel & $q=1$ & $0.920$ & $0.884$ & $0.768$ & $0.707$ \\
+                      & $(q,T)=(0.02,100)$ & $0.970$ & $0.941$ & $0.840$ & $0.725$ \\
+                      & bound & $0.789$ & $0.628$ & $0.373$ & $0$ \\
+        \midrule
+        CelebA, LPIPS & $q=1$ & $0.983$ & $0.963$ & $0.911$ & $0.933$ \\
+                      & $(q,T)=(0.02,100)$ & $0.991$ & $0.992$ & $0.975$ & $0.906$ \\
+                      & bound & $0.878$ & $0.734$ & $0.459$ & $0$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{The attack against the bound: $\rho$ over the $100$ targets, bootstrap standard errors between $0.013$ and $0.024$.}
+    \label{tab:attack_results}
+\end{table}

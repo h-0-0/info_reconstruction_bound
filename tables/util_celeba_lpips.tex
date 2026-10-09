@@ -1,0 +1,22 @@
+\begin{table}[t]
+  \centering
+  \caption{CELEBA (LPIPS): protection $\rho$ (bound) and achieved utility (resnet18gn) versus the DP guarantee $\varepsilon$ (at $\delta=n^{-1.1}$).}
+  \label{tab:util_celeba_lpips}
+  \begin{tabular}{r r r}
+    \toprule
+    $\varepsilon$ & $\rho$ (bound) & utility (test acc) \\
+    \midrule
+    0.10 & 0.95 & 0.543\,$\pm$\,0.090 \\
+    0.25 & 0.95 & 0.602\,$\pm$\,0.080 \\
+    0.50 & 0.95 & 0.859\,$\pm$\,0.010 \\
+    1.00 & 0.94 & 0.923\,$\pm$\,0.006 \\
+    2.00 & 0.93 & 0.946\,$\pm$\,0.000 \\
+    4.00 & 0.89 & 0.954\,$\pm$\,0.002 \\
+    8.00 & 0.80 & 0.957\,$\pm$\,0.000 \\
+    16.00 & 0.59 & 0.961\,$\pm$\,0.003 \\
+    32.00 & 0.17 & 0.967\,$\pm$\,0.001 \\
+    63.99 & 0.00 & 0.963\,$\pm$\,0.002 \\
+    128.00 & 0.00 & 0.966\,$\pm$\,0.003 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
